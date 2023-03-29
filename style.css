@@ -15,6 +15,10 @@ body {
   background: #eee5e9;
 }
 
+.nav-mobile {
+  display: none;
+}
+
 .screen {
   width: 100vw;
   height: 100vh;
@@ -66,6 +70,11 @@ body {
   pointer-events: none;
   letter-spacing: 2px;
   color: #000;
+}
+
+/* classes comuns */
+.title{
+  color: rgb(130, 62, 255);
 }
 
 /* =====screen HOME=========== */
@@ -133,20 +142,119 @@ body {
   );
 }
 
+/* =====screen ABOUT=========== */
+#about{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  
+}
+
+
+.main-about img{
+  border-radius: 5px;
+  padding: 2px;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  /* background-color: rgb(130, 62, 255); */
+  background: linear-gradient(
+    45deg,
+    rgb(34, 156, 255),
+    rgb(5, 234, 255) ,
+    rgb(108, 32, 248)
+  );
+}
+
+
+
+.main-about p {
+  width: 50%;
+  text-align: justify;
+  font-weight: 300;
+  padding: 2rem;
+}
+
+.main-about p span {
+  font-weight: 600;
+  background: linear-gradient(
+    45deg,
+    rgb(255, 34, 34) 10%,
+    rgb(245, 27, 118) 10%,
+    rgb(108, 32, 248)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+
 /*=============== TABLET responsive ============= */
-@media (max-width: 770px) {
+@media (max-width: 800px) {
   .main-home {
     justify-content: space-around;
   }
+
+  .title-1 {
+    font-size: 2rem;
+  }
+  .title-2 {
+    font-size: 2.5rem;
+  }
+  .wlissis {
+    background: linear-gradient(
+      45deg,
+      rgb(109, 1, 186) 10%,
+      rgb(245, 27, 118) 10%,
+      rgb(130, 62, 255)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .sub-title {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+    /* ===== ABOUT tablet=========== */
+#about{
+  height: 100vh;
+  width: 100vw;
 }
+.main-about{
+  gap: 0;
+}
+
+
+.main-about img{
+  height: 300px;
+  object-fit: cover;
+}
+
+
+
+.main-about p {
+  width: 50%;
+  text-align: justify;
+}
+
+}
+
 
 
 /*=============== MOBILE responsive ============= */
-
-.nav-mobile {
-  display: none;
-}
-
 @media (max-width: 430px) {
   .navbar {
     border: none;
@@ -220,7 +328,7 @@ body {
     transform: rotate(45deg);
   }
 
-  /*================= home mobile ==================== */
+  /*================= HOME mobile ==================== */
   #home {
     display: flex;
     align-items: center;
@@ -281,4 +389,32 @@ body {
       rgb(130, 62, 255)
     );
   }
+
+  /* ===== ABOUT mobile=========== */
+#about{
+  height: auto;
+  width: 100%;
+  gap: 1rem;
+}
+.main-about{
+  flex-direction: column;
+  gap: 0;
+}
+
+
+.main-about img{
+ width: 200px;
+ height: 300px;
+ object-fit: cover;
+}
+
+
+
+.main-about p {
+  width: 100%;
+  text-align: justify;
+  padding: 1rem 2rem;
+}
+
+
 }
