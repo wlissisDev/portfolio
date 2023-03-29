@@ -364,8 +364,8 @@ body {
 
   /* icone */
   .nav-mobile .open-nav .icon {
-    width: 20px;
-    height: 3px;
+    width: 30px;
+    height: 4px;
     background: #000;
     transition: all 0.8s;
   }
@@ -446,7 +446,7 @@ body {
   /* ===== ABOUT mobile=========== */
   #about {
     height: auto;
-    width: 100%;
+    margin: 2rem 0;
     gap: 1rem;
   }
   .main-about {
