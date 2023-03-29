@@ -477,5 +477,9 @@ body {
   }
 
   .skill{
+    width: 80%;
+  }
+  .percentage-text{
+    font-size: 1rem;
   }
 }
