@@ -73,7 +73,7 @@ body {
 }
 
 /* classes comuns */
-.title{
+.title {
   color: rgb(130, 62, 255);
 }
 
@@ -143,7 +143,7 @@ body {
 }
 
 /* =====screen ABOUT=========== */
-#about{
+#about {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -151,16 +151,14 @@ body {
   align-items: center;
   justify-content: center;
 }
-.main-about{
+.main-about {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  
 }
 
-
-.main-about img{
+.main-about img {
   border-radius: 5px;
   padding: 2px;
   width: 350px;
@@ -170,12 +168,10 @@ body {
   background: linear-gradient(
     45deg,
     rgb(34, 156, 255),
-    rgb(5, 234, 255) ,
+    rgb(5, 234, 255),
     rgb(108, 32, 248)
   );
 }
-
-
 
 .main-about p {
   width: 50%;
@@ -197,8 +193,71 @@ body {
   color: transparent;
 }
 
+/* ===============screnn SKILL=============== */
+#skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+#skills ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  cursor: pointer;
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;  border-radius: 0.4rem;
+  transition: all 0.2s ease-in-out;
+}
 
+.skill:hover{
+  transform: scale(1.06);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
 
+.tecno-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.tecno-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.percentage {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.percentage-bar {
+  width: 200px;
+  height: 5px;
+  background: #c4c4c4;
+  position: relative;
+  border-radius: 1rem;
+}
+.bar {
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  border-radius: 1rem;
+  background: rgb(40, 215, 255);
+ 
+}
+.percentage-text {
+  font-size: 12px;
+  font-weight: 600;
+}
 
 /*=============== TABLET responsive ============= */
 @media (max-width: 800px) {
@@ -228,31 +287,25 @@ body {
     font-weight: 400;
   }
 
-    /* ===== ABOUT tablet=========== */
-#about{
-  height: 100vh;
-  width: 100vw;
+  /* ===== ABOUT tablet=========== */
+  #about {
+    height: 100vh;
+    width: 100vw;
+  }
+  .main-about {
+    gap: 0;
+  }
+
+  .main-about img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .main-about p {
+    width: 50%;
+    text-align: justify;
+  }
 }
-.main-about{
-  gap: 0;
-}
-
-
-.main-about img{
-  height: 300px;
-  object-fit: cover;
-}
-
-
-
-.main-about p {
-  width: 50%;
-  text-align: justify;
-}
-
-}
-
-
 
 /*=============== MOBILE responsive ============= */
 @media (max-width: 430px) {
@@ -391,30 +444,38 @@ body {
   }
 
   /* ===== ABOUT mobile=========== */
-#about{
-  height: auto;
-  width: 100%;
-  gap: 1rem;
-}
-.main-about{
-  flex-direction: column;
-  gap: 0;
-}
+  #about {
+    height: auto;
+    width: 100%;
+    gap: 1rem;
+  }
+  .main-about {
+    flex-direction: column;
+    gap: 0;
+  }
 
+  .main-about img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
 
-.main-about img{
- width: 200px;
- height: 300px;
- object-fit: cover;
-}
+  .main-about p {
+    width: 100%;
+    text-align: justify;
+    padding: 1rem 2rem;
+  }
 
+  /* ============= SKILL mobile============= */
+  #skills {
+    height: auto;
+    margin: 1rem 0;
+  }
 
+  #skills ul{
+    gap: 2rem;
+  }
 
-.main-about p {
-  width: 100%;
-  text-align: justify;
-  padding: 1rem 2rem;
-}
-
-
+  .skill{
+  }
 }
