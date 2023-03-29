@@ -164,7 +164,6 @@ body {
   width: 350px;
   height: 350px;
   object-fit: cover;
-  /* background-color: rgb(130, 62, 255); */
   background: linear-gradient(
     45deg,
     rgb(34, 156, 255),
@@ -193,7 +192,7 @@ body {
   color: transparent;
 }
 
-/* ===============screnn SKILL=============== */
+/* ===============screen SKILL=============== */
 #skills {
   display: flex;
   flex-direction: column;
@@ -211,6 +210,7 @@ body {
   cursor: pointer;
 }
 .skill {
+  width: 300px;
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -240,7 +240,7 @@ body {
   gap: 10px;
 }
 .percentage-bar {
-  width: 200px;
+  width: 100%;
   height: 5px;
   background: #c4c4c4;
   position: relative;
