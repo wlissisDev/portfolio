@@ -306,6 +306,70 @@ body {
   background: #fff;
 }
 
+/* ==================sreen CONTATO=================== */
+#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.content-form{
+  width: 30%;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.content-input{
+  display: flex;
+  flex-direction: column;
+}
+.content-input label{
+  font-weight: 500;
+  font-size: .8rem;
+  color: #872af2;
+}
+.content-input input{
+  padding: 4px 8px;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #872af2;
+}
+
+.content-input textarea{
+  padding: 4px 8px;
+  outline: none;
+  border: none;
+  background: transparent;
+  border: 1px solid #872af2;
+}
+
+.formBnt{
+  padding: .4rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  background: linear-gradient(
+    45deg,
+    rgb(27, 209, 245) ,
+    rgb(109, 1, 186) ,
+    rgb(130, 62, 255)
+  );
+
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
 /*=============== TABLET responsive ============= */
 @media (max-width: 800px) {
   .main-home {
@@ -351,6 +415,15 @@ body {
   .main-about p {
     width: 50%;
     text-align: justify;
+  }
+  /* ===== PROJETOS tablet=========== */
+  #projects {
+    margin-top: 4rem;
+  }
+
+  /* ===== CONTATO tablet=========== */ 
+  .content-form{
+    width: 50%;
   }
 }
 
@@ -549,5 +622,13 @@ body {
     font-size: 1.4rem;
     padding: 8px 14px;
     border-radius: 4px;
+  }
+
+   /* ===== CONTATO mobile=========== */ 
+   .content-form{
+    width: 90%;
+  }
+  .formBnt{
+    font-size: 1rem;
   }
 }
