@@ -537,4 +537,17 @@ body {
   .list-projeto{
     gap: 2rem;
   }
+
+  .info-projeto{
+    padding: 1rem;
+  }
+
+  .name-projeto{
+    font-size: 1.5rem;
+  }
+  .btn-projeto{
+    font-size: 1.4rem;
+    padding: 8px 14px;
+    border-radius: 4px;
+  }
 }
