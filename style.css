@@ -625,9 +625,21 @@ body {
   }
 
    /* ===== CONTATO mobile=========== */ 
+   #contact{
+    margin-top: 4rem;
+  }
    .content-form{
     width: 90%;
+    height: 80%;
   }
+  .content-input label{
+    font-size: 1.2rem;
+  }
+
+  .content-input input{
+    font-size: 1rem;
+  }
+
   .formBnt{
     font-size: 1rem;
   }
