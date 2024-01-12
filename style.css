@@ -45,8 +45,10 @@
 }
 
 .navbar .logo {
-    font-weight: 700;
+    letter-spacing: 2px;
+    font-weight: 800;
     font-size: 1.3rem;
+    color: coral;
 }
 
 .navbar .nav-item {
@@ -55,6 +57,11 @@
     font-weight: 600;
     margin: 5px;
     color: var(--color-text);
+    transition: .3s;
+}
+
+.navbar .nav-item:hover{
+    color: coral;
 }
 
 .screen {
@@ -214,7 +221,14 @@
     background-color: #000000;
     color: rgb(255, 94, 14);
     border-radius: 3px;
+    transition: .3s;
 }
+
+.project-btns button:hover{
+    background-color: rgb(254, 110, 58);
+    color: #000000;
+}
+
 .reverse{
     flex-direction: row-reverse;
 }
@@ -238,12 +252,22 @@
     outline: none;
     font-size: 1.2rem;
     border: 1px solid rgba(190, 190, 190, 0.464);
+    padding: 0 8px;
 }
 .contact-textarea{
    height: 100px;
    resize: none;
 }
-.contact-btn{}
+.contact-btn{
+    padding: 14px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: coral;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
 
 /* --------------------------------------mobile---------------------------------------- */
 @media (max-width: 767px) {
@@ -316,7 +340,7 @@
     }
 
     #about h2 {
-        margin-top: 8rem;
+        margin-top: 6rem;
         text-align: center;
     }
 
@@ -325,7 +349,8 @@
     }
 
     #projects h2    {
-        margin-top: 8rem;
+        margin-top: 6rem;
+        text-align: center;
     }
 
     .project {
@@ -341,4 +366,13 @@
         -moz-box-shadow: 4px 7px 14px -200px rgba(0, 0, 0, 0.75);
         box-shadow: 4px 7px 14px -200px rgba(0, 0, 0, 0.75);
     }
+
+    #contact h2{
+        text-align: center;
+    }
+
+    .contact-form{
+        width: 300px;
+    }
+
 }
