@@ -3,292 +3,117 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;1,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Wlissis</title>
+    <title>WlissisDev</title>
+
+    <script src="main.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-
-        <div class="navbar">
-
-            <div class="nav">
-                <span>WLISSIS-DEV</span>
-                <div>
-                    <a href="#home">Início</a>
-                    <a href="#about">Sobre mim</a>
-                    <a href="#skills">Tecnologias</a>
-                    <a href="#projects">Projetos</a>
-                    <a href="#contact">Contato</a>
+    <div class="app">
+        <header class="navbar">
+            <span class="logo">Wlissis.Dev</span>
+            <button class="show">show</button>
+            <nav>
+                <a class="nav-item" href="#home">Início</a>
+                <a class="nav-item" href="#about">Sobre mim</a>
+                <a class="nav-item" href="#projects">Projetos</a>
+                <a class="nav-item" href="#contact">Contate-me</a>
+            </nav>
+        </header>
+        <main>
+            <!-- HOME -->
+            <div id="home" class="screen">
+                <section class="home-info">
+                    <h2>Olá, meu nome é Wlissis e sou <br /><span>Desenvolvedor Full-Stack</span></h2>
+                    <div class="stack">
+                        <span>Tech Stack |</span>
+                        <div>
+                            <img src="images/skills/node-js.png" alt="noejs">
+                            <img src="images/skills/js.png" alt="javascript">
+                            <img src="images/skills/postgre.png" alt="postgresql">
+                            <img src="images/skills/reactjs.png" alt="reactjs">
+                            <img src="images/skills/html.png" alt="html">
+                            <img src="images/skills/css-3.png" alt="css">
+                        </div>
+                    </div>
+                </section>
+                <img class="home-image" src="images/avatar/foto.png" alt="">
+            </div>
+            <!-- ABOUT -->
+            <div id="about" class="screen">
+                <h2>Um pouco sobre mim...</h2>
+                <div class="about-info">
+                    <img src="images/avatar/avatar.png" alt="avatar">
+                    <p>
+                        Atualmente estou cursando Ciências da Computação, posso dizer que
+                        sou uma pessoa que gosta de tecnologia e a forma como ela faz o mundo evoluir.
+                        Sempre busco cumprir meus objetivos dentro dos prazos e procuro evoluir em algo
+                        diariamente.
+                    </p>
                 </div>
             </div>
-        </div>
+            <!-- PROJECTS -->
+            <div id="projects" class="screen">
+                <h2>Meus projetos</h2>
+                <ul class="project-list">
+                    <li class="project">
+                        <img src="images/projects/login-app.jpg" alt="login app">
+                        <div class="project-info">
+                            <h3>Autenticação App</h3>
+                            <p>
+                                Nesse projeto eu crie um fluxo de registro e autenticação JWT
+                                onde o usuário cria sua conta e faz login.
+                            </p>
+                            <span>Reactjs Nodejs Postgresql PrismaORM</span>
+                            <div class="project-btns">
+                                <button>Code</button>
+                                <button>Demon</button>
+                            </div>
+                        </div>
+                    </li>
 
-        <div class="mobile">
-            <div class="nav-mobile">
-                <div class="open-nav">
-                    <div class="icon"></div>
-                    <div class="icon"></div>
-                    <div class="icon"></div>
-                </div>
-                <ul class="items-mobile">
-                    <li><a href="#home">Início</a></li>
-                    <li><a href="#about">Sobre mim</a></li>
-                    <li><a href="#skills">Tecnologias</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
+                    <li class="project reverse">
+                        <img src="images/projects/app-filmes.png" alt="Resumo de Filmes">
+                        <div class="project-info">
+                            <h3>Resumo de Filmes</h3>
+                            <p>
+                                Nesse projeto é uma lista de filmes disponibilizada por uma api externa
+                                nela existe resumo dos filmes e outras informações que eu tornei mais amigável
+                                de ver com esse projeto.
+                            </p>
+                            <span>Reactjs</span>
+                            <div class="project-btns">
+                                <button>Code</button>
+                                <button>Demon</button>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
-        </div>
+            <!-- CONTACT -->
+            <div id="contact" class="screen">
+                <h2>Entrar em contato</h2>
+                <form class="contact-form" action="https://formsubmit.co/wlissisdev@gmail.com" method="post">
+                    <input type="hidden" name="_next" 
+                    value="http://127.0.0.1:5500/sucesso.html"/>
+                    <input type="hidden" name="_autoresponse" 
+                    value="Recebemos sua mensagem, obrigado pelo contato e logo responderemos!" />
 
-        <div class="screen" id="home">
-            <div class="main-home">
-                <div class="info-home">
-                    <h3 class="title-1">Bem vindo!</h3>
-                    <h3 class="title-2">Eu sou <span class="wlissis">Wlissis</span></h3>
-                    <h4 class="sub-title">Desenvolvedor Web</h4>
-                </div>
-                <div class="images">
-                    <div class="socials">
-                        <a class="social-icon" href="https://github.com/wlissisDev" target="_blank"><img
-                                src="./images/icons/github.png" alt="github"></a>
-                        <a class="social-icon" href="https://www.linkedin.com/in/wlissis-ribeiro/" target="_blank"><img
-                                src="./images/icons/linkedin.png" alt="linkedin"></a>
-                    </div>
-                    <img class="avatar" src="./images/avatar/avatar.png" alt="avatar">
-                </div>
+                    <input class="contact-input" type="text" name="name" placeholder="Nome">
+                    <input class="contact-input" type="email" required name="email" placeholder="Email">
+                    <input class="contact-input" type="text" name="subject" placeholder="Assunto">
+                    <textarea class="contact-textarea" name="message" placeholder="Mensagem"></textarea>
+                    <button class="contact-btn" type="submit">Enviar</button>
+                </form>
             </div>
-
-        </div>
-
-        <div class="screen" id="about">
-            <h1 class="title">Sobre mim</h1>
-            <div class="main-about">
-                <img src="./images/avatar/personal.jpeg" alt="minha-foto">
-                <p>
-                    Meu nome é Wlissis. Sou <span> Desenvolvedor web fullstack </span> e atualmente estou
-                    cursando Ciências da Computação com data de conclusão
-                    prevista para o ano de 2024.
-                    Sou um admirador da tecnologia e de como ela tem ajudado as pessoas.
-                    Estou sempre em busca de novos aprendizados tanto em soft skills como em hard skills.
-                </p>
-            </div>
-        </div>
-
-        <div class="screen" id="skills">
-            <h1 class="title">Tecnologias</h1>
-            <ul>
-                <li class="skill">
-                    <div class="tecno-info">
-                        <img class="tecno-img" src="./images/skills/nextjs.svg" alt="">
-                        <span>NextJS</span>
-                    </div>
-                    <div class="percentage">
-                        <div class="percentage-bar"><span style="width: 60%;" class="bar"></span></div>
-                        <span class="percentage-text">60%</span>
-                    </div>
-                </li>
-                <li class="skill">
-                    <div class="tecno-info">
-                        <img class="tecno-img" src="./images/skills/node-js.png" alt="">
-                        <span>NodeJS</span>
-                    </div>
-                    <div class="percentage">
-                        <div class="percentage-bar"><span style="width: 65%;" class="bar"></span></div>
-                        <span class="percentage-text">65%</span>
-                    </div>
-                </li>
-                <li class="skill">
-                    <div class="tecno-info">
-                        <img class="tecno-img" src="./images/skills/reactjs.svg" alt="">
-                        <span>ReactJS</span>
-                    </div>
-                    <div class="percentage">
-                        <div class="percentage-bar"><span style="width: 80%;" class="bar"></span></div>
-                        <span class="percentage-text">80%</span>
-                    </div>
-                </li>
-                <li class="skill">
-                    <div class="tecno-info">
-                        <img class="tecno-img" src="./images/skills/tailwind.png" alt="">
-                        <span>Tailwind CSS</span>
-                    </div>
-                    <div class="percentage">
-                        <div class="percentage-bar"><span style="width: 40%;" class="bar"></span></div>
-                        <span class="percentage-text">40%</span>
-                    </div>
-                </li>
-                <li class="skill">
-                    <div class="tecno-info">
-                        <img class="tecno-img" src="./images/skills/html.png" alt="">
-                        <span>HTML</span>
-                    </div>
-                    <div class="percentage">
-                        <div class="percentage-bar"><span style="width: 85%;" class="bar"></span></div>
-                        <span class="percentage-text">85%</span>
-                    </div>
-                </li>
-                <li class="skill">
-                    <div class="tecno-info">
-                        <img class="tecno-img" src="./images/skills/css-3.png" alt="">
-                        <span>CSS</span>
-                    </div>
-                    <div class="percentage">
-                        <div class="percentage-bar"><span style="width: 90%;" class="bar"></span></div>
-                        <span class="percentage-text">90%</span>
-                    </div>
-                </li>
-                <li class="skill">
-                    <div class="tecno-info">
-                        <img class="tecno-img" src="./images/skills/postgre.png" alt="">
-                        <span>PostgreSQL</span>
-                    </div>
-                    <div class="percentage">
-                        <div class="percentage-bar"><span style="width: 60%;" class="bar"></span></div>
-                        <span class="percentage-text">60%</span>
-                    </div>
-                </li>
-                <li class="skill">
-                    <div class="tecno-info">
-                        <img class="tecno-img" src="./images/skills/js.png" alt="">
-                        <span>Javascript</span>
-                    </div>
-                    <div class="percentage">
-                        <div class="percentage-bar"><span style="width: 90%;" class="bar"></span></div>
-                        <span class="percentage-text">90%</span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        
-
-        <div class="screen" id="projects">
-            <h1 class="title">Projetos</h1>
-             <ul class="list-projects">
-                <li class="project">
-                    <img class="image-project" src="./images/projects/calculadora.jpg" alt="">
-                    <div class="info-project">
-                        <h3>Calculadora</h3>
-                        <p>HTML, CSS, Javascript</p>
-                        <a href="https://649d9b9d4e55581b17fdd846--resilient-crisp-dd0565.netlify.app/"
-                            target="_blank">Demo</a>
-                    </div>
-                </li>
-
-                 <li class="project">
-                    <img class="image-project" src="./images/projects/app-filmes.png" alt="app-filmes">
-                    <div class="info-project">
-                        <h3>App Filmes</h3>
-                        <p>Nextjs 13, Tailwind CSS</p>
-                        <a href="https://warm-donut-e0bb6e.netlify.app/" target="_blank">Demo</a>
-                    </div>
-                </li>
-
-
-                <li class="project">
-                    <img class="image-project" src="./images/projects/spotify.jpg" alt="">
-                    <div class="info-project">
-                        <h3>Clone Spotify</h3>
-                        <p>ReactJS</p>
-                        <a href="https://wondrous-sable-88a39f.netlify.app/" target="_blank">Demo</a>
-                    </div>
-                </li>
-
-                
-                <li class="project">
-                    <img class="image-project" src="./images/projects/sunnyside.jpg" alt="">
-                    <div class="info-project">
-                        <h3>Site Sunnyside</h3>
-                        <p>HTML, CSS, Javascript</p>
-                        <a href="https://resonant-narwhal-3f5aa2.netlify.app/" target="_blank">Demo</a>
-                    </div>
-                </li>
-
-                <li class="project">
-                    <img class="image-project" src="./images/projects/formulario.png" alt="">
-                    <div class="info-project">
-                        <h3>Personalized card</h3>
-                        <p>HTML, CSS, Javascript</p>
-                        <a href="https://melodic-madeleine-24b05d.netlify.app/" target="_blank">Demo</a>
-                    </div>
-                </li>
-
-                <li class="project">
-                    <img class="image-project" src="./images/projects/spacesite.jpg" alt="">
-                    <div class="info-project">
-                        <h3>Site Space Tourisme</h3>
-                        <p>HTML, CSS, Javascript</p>
-                        <a href="https://taupe-beignet-360413.netlify.app/" target="_blank">Demo</a>
-                    </div>
-                </li>
-
-                 <li class="project">
-                    <img class="image-project" src="./images/projects/imc.jpg" alt="app-filmes">
-                    <div class="info-project">
-                        <h3>Calculadora de IMC</h3>
-                        <p>HTML, CSS, Javascript</p>
-                        <a href="https://magnificent-quokka-3b4200.netlify.app/" target="_blank">Demo</a>
-                    </div>
-                </li>
-
-                 <li class="project">
-                    <img class="image-project" src="./images/projects/to-do.jpg" alt="app-filmes">
-                    <div class="info-project">
-                        <h3>Lista tarefas</h3>
-                        <p>ReactJS, Tailwind CSS</p>
-                        <a href="https://cheerful-chebakia-0b490b.netlify.app/" target="_blank">Demo</a>
-                    </div>
-                </li>
-
-                  <li class="project">
-                    <img class="image-project" src="./images/projects/post-crud.jpg" alt="crud">
-                    <div class="info-project">
-                        <h3>Crud Post</h3>
-                        <p>ReactJS, Tailwind CSS, Axios, NodeJS, Express, Prisma ORM, Typescript</p>
-                        <a href="https://crud-frontend-7jup.onrender.com/" target="_blank">Demo</a>
-                    </div>
-                </li>
-
-                  <li class="project">
-                    <img class="image-project" src="./images/projects/cardapio.jpg" alt="">
-                    <div class="info-project">
-                        <h3>Cardápio digital</h3>
-                        <p>ReactJs, NodeJs, Postgresql</p>
-                        <a href="https://eloquent-otter-265a87.netlify.app/" target="_blank">Demo</a>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-
-    <div id="contact">
-        <div class="contacts">
-            <div class="contact">
-                <img src="./images/icons/whatsapp.png" alt="whatsapp">
-                <span>(85) 98130-5644</span>
-            </div>
-            
-            <div class="contact">
-                <img src="./images/icons/gmail.png" alt="gmail">
-                <span>wlissisdev@gmail.com</span>
-            </div>
-        </div>
-        <iframe
-        class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4873.191096482737!2d-38.632694340135004!3d-3.768544256860121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74c985eb9953d%3A0x48bb43d1b6aafba9!2sR.%20Onze%20-%20Araturi%20(Jurema)%2C%20Caucaia%20-%20CE%2C%2061655-800!5e0!3m2!1spt-BR!2sbr!4v1689106130154!5m2!1spt-BR!2sbr"
-            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </main>
     </div>
-
-
-    <script src="script.js"></script>
 </body>
 
 </html>
