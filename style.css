@@ -100,6 +100,15 @@
     font-weight: 800;
 }
 
+.home-socials{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.home-socials a img{
+    width: 40px;
+}
+
 .stack {
     margin-top: 2rem;
     display: flex;
@@ -209,13 +218,14 @@
 
 .project-btns {}
 
-.project-btns button {
+.project-btns a {
+    text-decoration: none;
     margin: 10px;
     border: 0;
     outline: none;
     cursor: pointer;
-    width: 100px;
-    padding: 8px;
+    padding: 8px 20px;
+    
     font-size: 1rem;
     font-weight: 600;
     background-color: #000000;
@@ -224,7 +234,7 @@
     transition: .3s;
 }
 
-.project-btns button:hover{
+.project-btns a:hover{
     background-color: rgb(254, 110, 58);
     color: #000000;
 }
@@ -288,7 +298,7 @@
 
         background: rgb(255, 181, 69);
 
-        transition: all 1s ease;
+        transition: all .4s ease-in-out;
     }
 
     .navbar .nav-item {
@@ -306,6 +316,14 @@
     #home {
         grid-template-columns: 1fr;
 
+    }
+
+    .home-socials{
+        width: 100%;
+        justify-content: center;
+    }
+    .home-info a img{
+        width: 30px;
     }
 
     .stack {
